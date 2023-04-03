@@ -1,0 +1,70 @@
+[versions]
+gradle = "8.1.0-alpha11"
+kotlin = "1.8.10"
+hilt = "2.45"
+core-ktx = "1.9.0"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+lifecycle-ktx = "2.6.1"
+activity-compose = "1.7.0"
+compose-bom = "2023.03.00"
+hiltNavigation = "1.0.0"
+timber = "5.0.1"
+retrofit = "2.9.0"
+okhttp = "4.10.0"
+gson = "2.10.1"
+accompanist = "0.28.0"
+
+[libraries]
+# CORE
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+androidx-lifecycle-ktx-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-ktx" }
+androidx-lifecycle-ktx-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle-ktx" }
+
+# TESTING
+test-junit = { group = "junit", name = "junit", version.ref = "junit" }
+test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+test-espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+
+# COMPOSE TESTING
+compose-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+compose-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+
+# COMPOSE
+compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+
+compose-ui-fonts = { group = "androidx.compose.ui", name = "ui-text-google-fonts" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose" }
+compose-navigation = { group = "androidx.navigation", name = "navigation-compose" }
+compose-navigation-hilt = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigation" }
+compose-accompanist-systemuicontroller = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "accompanist"}
+compose-accompanist-permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist"}
+
+
+# DEPENDINCY INJECTION
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+
+# WEB REQUEST
+web-okhttp = {group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp"}
+web-okhttp-interceptor = {group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp"}
+web-gson = {group = "com.google.code.gson", name = "gson", version.ref = "gson"}
+web-retrofit = {group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit"}
+web-retrofit-gson = {group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit"}
+
+# OTHER
+utils-timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "gradle" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+
+[bundles]
